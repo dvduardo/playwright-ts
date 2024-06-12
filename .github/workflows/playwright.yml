@@ -14,7 +14,7 @@ jobs:
       with:
         node-version: 18
     - name: Docker up
-      run: ls;docker-compose up
+      run: docker-compose up
     - name: Install dependencies
       run: npm install
     - name: Install Playwright Browsers
