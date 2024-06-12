@@ -20,9 +20,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Wait for api
-      run: ./wait-for-it.sh localhost:8080
+      run: chmod +x wait-for-it.sh; ./wait-for-it.sh localhost:8080 -t 60
     - name: Wait for web
-      run: ./wait-for-it.sh localhost:3333
+      run: ./wait-for-it.sh localhost:3333 -t 60
     - name: Run tests
       run: npx playwright test
     # - uses: actions/upload-artifact@v3
