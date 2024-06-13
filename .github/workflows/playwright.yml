@@ -14,15 +14,11 @@ jobs:
       with:
         node-version: 18
     - name: Docker up
-      run: docker-compose up
+      run: docker-compose up -d
     - name: Install dependencies
       run: npm install
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Wait for web
-      run: chmod +x wait-for-it.sh; ./wait-for-it.sh localhost:3333 -t 300
-    - name: Wait for api
-      run: ./wait-for-it.sh localhost:8080 -t 300
     - name: Run tests
       run: npx playwright test
     # - uses: actions/upload-artifact@v3
