@@ -49,7 +49,7 @@ The GitHub Actions workflow consists of two main jobs:
 - **test-web**: This job runs Playwright tests for the web interface.
 - **test-api**: Intended for API testing (setup to be completed).
 
-The app system wasn't developed by me. I used a basic project that I saw in a course on Udemy taught by [QAx](https://cursos.qaxperience.com/pt).
+The app system wasn't developed by me. I used a basic project that I saw in a course on Udemy taught by [QAx](https://github.com/qax-education).
 
 License
 This project is open source and available under the MIT License.
