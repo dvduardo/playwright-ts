@@ -1,9 +1,7 @@
-name: Playwright Integration Tests
+name: Playwright Schedule Tests
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  schedule:
+    - cron: '0 14 * * *'
 jobs:
   test-web:
     timeout-minutes: 30
